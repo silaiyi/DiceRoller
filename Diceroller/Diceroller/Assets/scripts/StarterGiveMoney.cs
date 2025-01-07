@@ -16,7 +16,7 @@ public class StarterGiveMoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(wavecount>=50){
+        if(wavecount>=5){
             winmenu.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
