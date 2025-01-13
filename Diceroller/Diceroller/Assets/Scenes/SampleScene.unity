@@ -192,7 +192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Space To Start
+  m_Text: Start
 --- !u!222 &247864928
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -283,7 +283,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 395459836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687578355}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &395459836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,10 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ed8086b822e084b985d140627042e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yRotationMinLimit: -360
-  yRotationMaxLimit: 360
-  xRotationSpeed: 250
-  yRotationSpeed: 120
+  rotationSpeed: 10
 --- !u!1 &1640376900
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +708,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press ESC To EXIT
+  m_Text: EXIT
 --- !u!222 &1655771606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -871,7 +880,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1717698556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687578355}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1717698556
 MonoBehaviour:
   m_ObjectHideFlags: 0

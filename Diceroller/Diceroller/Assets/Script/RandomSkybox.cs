@@ -9,7 +9,7 @@ public class RandomSkybox : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("ChangeSkybox", 5.0f, 5.0f); // 每隔60秒调用ChangeSkybox函数
+        InvokeRepeating("ChangeSkybox", 30f, 30f); // 每隔30秒调用ChangeSkybox函数
     }
 
     void ChangeSkybox()
